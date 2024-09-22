@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.resume-container {
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    border-radius: 4px;
+}
+
+.photo-box {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align horizontally */
+    justify-content: flex-start; 
+    flex: 1;
+    padding-right: 20px;
+    padding-top: 30px;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+.photo-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 5px solid #ddd;
+    box-shadow: 8px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.lang, .outros, .idiomas {
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #b3b3b3;
+    border-radius: 4px;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0 4px 4px rgb(2,0,36);
+}
+
+.lang:hover, .outros:hover, .idiomas:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.lang  h4, .outros h4, .idiomas h4 {
+    font-size: 1rem;
+    text-indent: 10px;
+}
+
+@media (min-width: 768px) {
+    .lang, .outros {
+        width: 80%; /* On larger screens, the divs will take up less space */
+    }
+}
+
+.content-box {
+    flex: 2;
+    padding-left: 20px;
+}
+
+.content-box h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.content-box h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.content-box p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    color: #333;
+    font-size: 14px;
+}
+
+.educacao, .profissional {
+    margin-top: 20px;
+}
+
+.educacao h2, .profissional h2 {
+    font-size: 1.6rem;
+    color: #2c3e50;
+}
+
+.educacao ul, .profissional ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.educacao li, .profissional li {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.educacao em, .profissional em {
+    color: #7f8c8d;
+}
